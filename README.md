@@ -11,4 +11,3 @@ This project will leverage [Teachable-Machine](https://teachablemachine.withgoog
 - Trained model on 754 images (captured via my own webcam) for each class so model can eventually properly categorise gestures from data provided during game.
 - Downloaded tensorflow file and associated labels text file to local machine.
 - Pushed aforementioned files to repo.
-- Began updating README to document project.
