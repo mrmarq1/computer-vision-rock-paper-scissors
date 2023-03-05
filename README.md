@@ -12,5 +12,3 @@ This project will leverage [Teachable-Machine](https://teachablemachine.withgoog
 - Downloaded tensorflow file and associated labels text file to local machine.
 - Pushed aforementioned files to repo.
 - Began updating README to document project.
-
-## Milestone 3: Install the dependencies
