@@ -66,11 +66,12 @@ def play():
   while True:
     countdown(3)
     get_round_winner(get_computer_choice(), get_prediction(data))
-    game_over_scenarios = {computer_wins: 'Game over... the computer won.',
-                           user_wins: 'Congratulations... you won the game!'}
-    game_over_message = game_over_scenarios.get(3)
-    if game_over_message:
-       print(game_over_message)
+    if computer_wins == 3:
+       print('Game over... the computer won.')
+       event.set()
+       break
+    if user_wins == 3:
+       print('You won the game!!!')
        event.set()
        break
   
