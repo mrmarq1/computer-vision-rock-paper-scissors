@@ -10,8 +10,8 @@ cap = cv2.VideoCapture(0)
 data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)       
 vid_input = False
 options = ('Rock', 'Paper', 'Scissors','Nothing')
-computer_wins_count = 0
-user_wins_count = 0
+computer_wins = 0
+user_wins = 0
 
 def countdown(seconds):
   for countdown in range(seconds,0,-1):
@@ -45,7 +45,8 @@ def get_computer_choice():
    return computer_choice
 
 def get_round_winner(user_choice, computer_choice):
-    global computer_wins_count, user_wins_count    
+    global computer_wins, user_wins    
+    
     loss_scenarios = {'Rock': 'Scissors', 'Paper': 'Rock', 'Scissors': 'Paper'}
     if user_choice == 'Nothing':
        print('You didn\'t make a choice. Try again.') 
@@ -66,11 +67,11 @@ def play():
   while True:
     countdown(3)
     get_round_winner(get_prediction(data), get_computer_choice())
-    if computer_wins_count == 3:
+    if computer_wins == 3:
        print('Game over... the computer won.')
        event.set()
        break
-    if user_wins_count == 3:
+    if user_wins == 3:
        print('You won the game!!!')
        event.set()
        break
