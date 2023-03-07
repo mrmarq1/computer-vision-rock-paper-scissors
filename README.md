@@ -58,4 +58,17 @@ This project will leverage [Teachable-Machine](https://teachablemachine.withgoog
     get_winner(get_computer_choice(), get_user_choice())
   ```
 
+  ## Milestone 5: Use the camera to play Rock-Paper-Scissors
+
+  - Replaced hard-coded user imput with input from user's camera using Teachable-Machine model to predict gesture.
+  - Introduced countdown from 3 to 0 before each round played.
+  - Threaded function relating to video input so ran in background and wasn't affected by concurrent operations.
+  - Implemented a game completion condition wherein the game finishes as soon as either the computer or user reach 3 wins.
+  - The following shows a screenshot of the game in action with the output in the terminal.
+  ![rps_screenshot_1](https://user-images.githubusercontent.com/126958930/223478191-251c8ad5-dc93-456d-8615-21bcfed441d1.jpg)
+  - Intend to refactor code, including use of class-based structure. Could also change the countdown to appear as text in the video interface.
+
+
+
+
 
