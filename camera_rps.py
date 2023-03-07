@@ -77,5 +77,5 @@ class Camera_RPS:
          print('You won the round!')
          self.user_wins += 1
 
-game1 = Camera_RPS()
+game1 = Camera_RPS(num_rounds=5)
 game1.play()
