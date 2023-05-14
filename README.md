@@ -1,4 +1,4 @@
-# 'Rock-Paper-Scissors' Interative Game (Computer Vision)
+# 'Rock-Paper-Scissors' Interative Game (Computer Vision) 
 
 This project will leverage [Teachable-Machine](https://teachablemachine.withgoogle.com/) to create an interactive version of the classic 'Rock-Paper-Scissors' game. The game will allow the user to play against the computer using their own camera.
 

@@ -3,7 +3,7 @@ from keras.models import load_model
 import numpy as np
 from time import sleep
 from threading import Thread, Event
-from random import choice
+from random import choice 
 
 class Camera_RPS:
    MODEL = load_model('keras_model.h5')
