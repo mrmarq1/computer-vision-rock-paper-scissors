@@ -78,4 +78,4 @@ class Camera_RPS:
          self.user_wins += 1
 
 game1 = Camera_RPS(num_rounds=3)
-game1.play()
+game1.play() 
